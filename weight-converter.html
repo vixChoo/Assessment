@@ -48,7 +48,7 @@
         </div>
         <div class='d-flex justify-content-center align-items-center' style='padding: 90px'>
             <div style="padding:20px; border: solid darkcyan 1px; border-radius: 3px;">
-                <form action="" onsubmit="weightConverter()" name="converter">
+                <form onsubmit="weightConverter()" name="converter">
                     <label for="kg">Kilograms :</label>
                     <input type="number" name="kg" placeholder="10 kg" min="0" required> 
                     <input type="submit" value="Convert">
@@ -86,8 +86,8 @@
             pound = kg / 0.45359237;
             mgram = kg * 1000000;
 
-            document.getElementById('pound').innerHTML = pound;
-            document.getElementById('mgram').innerHTML = mgram;
+            document.getElementById('pound').innerHTML = pound + " lb";
+            document.getElementById('mgram').innerHTML = mgram + " mg";
         }
 
     }
